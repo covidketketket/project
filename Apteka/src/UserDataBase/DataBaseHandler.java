@@ -1,16 +1,15 @@
 package UserDataBase;
 
-import java.beans.Statement;
 import java.sql.*;
 
 public class DataBaseHandler {
     private static DataBaseHandler handler=null;
-    private static final String db_url="jdbc:oracle:thin:@localhost:1521:xe";
+    private static final String db_url= "jdbc:oracle:thin:@localhost:1521/orcl";
     public static Connection conn=null;
     private static Statement stmt=null;
 
     private DataBaseHandler() {
-        //createConnection();
+        createConnection();
     }
 
     public static DataBaseHandler getInstance() {
@@ -22,44 +21,31 @@ public class DataBaseHandler {
 
     public void createConnection() {
         try {
-            Class.forName("oracle.jdbc.driver.oracleDriver");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    /*void Apteka1() {
-        String TABLE_NAME="Hippocrates";
-        try {
-            stmt = (Statement) conn.createStatement();
-            DatabaseMetaData dbm = conn.getMetaData();
-            ResultSet tables = dbm.getTables(null,null, TABLE_NAME.toUpperCase(), null);
-            if (tables.next()) {
-                System.out.println("The table Hippocrates exists.");
-            } else {
-                stmt.execute();
-            }
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            conn = DriverManager.getConnection(db_url, "system", "Stepuxa26");
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    /*void Apteka1() {
+    void Apteka1() {
         String TABLE_NAME="Hippocrates";
         try {
-            stmt = (Statement) conn.createStatement();
+            stmt = conn.createStatement();
             DatabaseMetaData dbm = conn.getMetaData();
             ResultSet tables = dbm.getTables(null,null, TABLE_NAME.toUpperCase(), null);
             if (tables.next()) {
                 System.out.println("The table Hippocrates exists.");
             } else {
                 stmt.execute("CREATE TABLE " + TABLE_NAME + "("
-                        + "id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (STARTS WITH 1, INCREMENTS BY 1) PRIMARY KEY,"
-                        + "name varchar2(200),"
-                        + "cost number(6),"
-                        + "shelf life date not null);");
+                        + "id number GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1) PRIMARY KEY,"
+                        + "name varchar2(200) not null,"
+                        + "cost number(6) not null,"
+                        + "shelf_life date not null)" +
+                        "");
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }*/
+    }
 }
