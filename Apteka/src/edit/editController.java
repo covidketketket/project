@@ -1,4 +1,4 @@
-package admin;
+package edit;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class adminController implements Initializable {
+public class editController implements Initializable {
     ObservableList<String> cityList = FXCollections.observableArrayList();
     ObservableList<String> sortList = FXCollections.observableArrayList();
     @FXML
@@ -40,7 +40,7 @@ public class adminController implements Initializable {
         sortList.removeAll();
         String[] a1 = {"*", "Нур-Султан", "Алматы", "Актобе", "Атырау", "Шымкент",
                         "Павлодар", "Караганда", "Кызылорда", "Семей", "Кокшетау"};
-        String[] a2 = {"drug_price asc", "drug_price desc", "name asc", "name desc"};
+        String[] a2 = {"price asc", "price desc", "name asc", "name desc"};
         city.setValue("*");
         sort.setValue("");
         cityList.addAll(a1);
@@ -62,10 +62,10 @@ public class adminController implements Initializable {
         loadWindow("/login/loginSample.fxml", "Apteka: log in");
     }
     public void search(MouseEvent mouseEvent) throws IOException {
-        choosedCity = "'" + city.getValue() + "'";
+        choosedCity = city.getValue();
         chdr = drugname.getText();
-        choosedSort = (sort.getValue().equals("")? "" : "order by " + sort.getValue());
-        loadWindow("/ATableView/ATable.fxml", "Apteka: " + city.getValue());
+        choosedSort = sort.getValue();
+        loadWindow("/TableView/table.fxml", "Apteka: " + city.getValue());
     }
     public void adminpage(MouseEvent mouseEvent) throws IOException {
         ((Node) mouseEvent.getSource()).getScene().getWindow().hide();

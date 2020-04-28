@@ -1,6 +1,9 @@
 package login;
 
+import TableView.viewController;
 import UserDataBase.DataBaseHandler;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,13 +17,18 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import user.userController;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class loginController implements Initializable {
     private static DataBaseHandler handler;
+    ObservableList list = FXCollections.observableArrayList();
     String defaultAdminName="admin";
     String defaultAdminPass="admin";
     String defaultUserName= "user";
@@ -47,12 +55,36 @@ public class loginController implements Initializable {
         } else if (name.equals(defaultUserName) && pas.equals(defaultUserPass)){
             ((Node) event.getSource()).getScene().getWindow().hide();
             loadWindow("/user/user.fxml", "Apteka: Search Helper");
+        } else if (findData(name, pas)){
+            ((Node) event.getSource()).getScene().getWindow().hide();
+            loadWindow("/user/user.fxml", "Apteka: Search Helper");
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Username or password is incorrect!");
             alert.showAndWait();
         }
+    }
+    private boolean findData(String name, String pas) {
+        list.removeAll(list);
+
+        String query = "Select first_name, password, email from users";
+        try {
+            PreparedStatement noah = DataBaseHandler.conn.prepareStatement(query);
+            ResultSet res = noah.executeQuery();
+            while (res.next()) {
+                String fname = res.getString("first_name");
+                String em = res.getString("email");
+                String pass = res.getString("password");
+                if ((fname.equals(name) && pass.equals(pas)) ||
+                        (em.equals(name) && pass.equals(pas))){
+                    return true;
+                }
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return false;
     }
     public void register(MouseEvent mouseEvent) throws IOException {
         ((Node) mouseEvent.getSource()).getScene().getWindow().hide();
