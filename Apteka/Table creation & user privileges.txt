@@ -1,0 +1,27 @@
+CREATE TABLE apteki(
+ID NUMBER(16) not null,
+City VARCHAR2(100),
+Name VARCHAR2(100),
+Address VARCHAR2(100),
+Time_Schedule VARCHAR2(100),
+CONSTRAINT apt_con PRIMARY KEY (id));
+
+CREATE TABLE drugs(
+id NUMBER(16),
+name VARCHAR2(100),
+drug VARCHAR2(999),
+constraint drug_con
+foreign key(id)
+references apteki(ID));
+
+
+
+alter session set "_ORACLE_SCRIPT"=true;
+
+create user myuser;
+create role aptekauser;
+grant select on apteki to aptekauser;
+grant select on drugs to aptekauser;
+grant select on price to aptekauser;
+grant create session to myuser;
+grant aptekauser to myuser;

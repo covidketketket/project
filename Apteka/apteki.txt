@@ -1,0 +1,386 @@
+﻿
+
+INSERT ALL 
+INTO apteki(ID, City, Name, Address, Time_Schedule) VALUES (1, 'Нур-Султан', '36.6 pharm', 'пр. Мангилик Ел, 54', '08:00-00:00')
+INTO apteki(ID, City, Name, Address, Time_Schedule) VALUES (2, 'Нур-Султан', 'AbdeshPharm', 'пр. Кудайбердыулы, 24/1', '09:00-23:00')
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (3, 'Нур-Султан', 'BS Farm', 'ул. Чингиза Айтматова, 29А', '09:00-23:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (4, 'Нур-Султан', 'Cardio Farm', 'ул. Потанина, 12', '08:00-22:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (5, 'Нур-Султан', 'Darumen', 'Шоссе Алаш, 13', '10:00-19:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)a
+VALUES (6, 'Нур-Султан', 'Europharma', 'пр. Туран, 37', '08:00-22:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (7, 'Нур-Султан', 'Gul Pharm', 'пр. Улы Дала, 11/3', '09:00-23:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (8, 'Нур-Султан', 'Jan Pharm', 'ул. Мустафина, 21/6', '24/7')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (9, 'Нур-Султан', 'Kemel PHARM', 'ул. Сейфуллина, 4/2', '09:30-23:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (10, 'Нур-Султан', 'MikaPharma', 'пр. Кошкарбаева, 32/3', '10:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (11, 'Алматы', 'AlMed', 'ул. Гоголя, 35', '08:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (12, 'Алматы', 'Bavi', 'ул. Розыбакиева, 156', '08:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (13, 'Алматы', 'Chinil Pharma', 'ул. Толе би, 284', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (14, 'Алматы', 'Dari103.kz', 'ул. Мұстай Кәрім, 12/16', '09:00-23:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (15, 'Алматы', 'Farm Expres', 'ул. Гоголя, 155', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (16, 'Алматы', 'Greenovea', 'ул. Кабанбай батыра, 154', '09:00-18:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (17, 'Алматы', 'Health Kz', 'пр. Сейфуллина, 183А', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (18, 'Алматы', 'Inter Хайер', 'ул. Бичурина, 1/2', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (19, 'Алматы', 'Kona Group', 'ул. Жангельдина, 31/1', '08:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (20, 'Алматы', 'Lika Pharm', 'пр. Райымбека, 507А', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (21, 'Актобе', 'MANSURpharm', 'мкрн. Батыс, 2/338', '09:30-17:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (22, 'Актобе', 'Айболит', 'ул. Бокенбай батыра, 133Б', '09:00-21:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (23, 'Актобе', 'Акниет', 'пр.Санкибай батыра, 24/Е', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (24, 'Актобе', 'Актилек', '11 мкр., дом 47', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (25, 'Актобе', 'Арс', 'пр.Абилкайыр-хана, 89', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (26, 'Актобе', 'Биола', 'ул. Ахтанова, 61', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (27, 'Актобе', 'Вита Лайн', 'ул. Сатпаева 11', '09:00-20:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (28, 'Актобе', 'Гиппократ', 'прс. Победы, 21', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (29, 'Актобе', 'Даир', '11 мкр, д.87', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (30, 'Актобе', 'Дармен', 'Жазыкова, 2', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (31, 'Атырау', 'APPLE', 'ул. Муканова, 1Б', '09:00-20:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (32, 'Атырау', 'KAZELITE', 'пр. Азаттык, 124А', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (33, 'Атырау', 'АСПИРИН', 'пр. Азаттык, 29', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (34, 'Атырау', 'БОЛЬШАЯ', 'ул. Кунанбаева, 19В', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (35, 'Атырау', 'ЗЕЛЕНАЯ', 'ул. Утемисова, 118Е', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (36, 'Атырау', 'Медилаб', 'пр. Сатпаев, 32', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (37, 'Атырау', 'Социальная', 'ул. Махамбет Утемисов, 17', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (38, 'Атырау', 'ТАБЛЕТКА', 'Здание ж/д вокзала', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (39, 'Атырау', 'УФГ', 'ул. Кунанбаева, 15А', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (40, 'Атырау', 'Фармация', 'ул. Курмангазы, 30', '09:00-20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (41, 'Шымкент', 'Grandpharm', 'Сайрам микрорайон, 10/3', '09:00 - 21:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (42, 'Шымкент', 'HUMANA', 'Адырбекова, 2/2', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (43, 'Шымкент', 'Inkar фарм', 'пр. Абая, д.7', '09:00 - 20:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (44, 'Шымкент', 'LUX', 'Юсуфа Сареми, 9/4', '09:00 - 18:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (45, 'Шымкент', 'Nadia Pharm', 'Абдыразакова, 10/1', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (46, 'Шымкент', 'UMID pharm', 'Гагарина, 13/11', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (47, 'Шымкент', 'Абу Акбар', 'Тамерлановское шоссе, 22', '08:00 - 01:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (48, 'Шымкент', 'Аделина', 'Шамши Калдаякова, 1Б', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (49, 'Шымкент', 'Азиз Фарм', 'пр. Республики, 46', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (50, 'Шымкент', 'АЙДАЙКЫЗ', 'Жангельдина, 2а', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (51, 'Павлодар', 'Арлан-Пв', 'Бекхожина, 15', '08:30 - 20:30')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (52, 'Павлодар', 'Булат-Фарм', 'Камзина, 352', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (53, 'Павлодар', 'Вербена', 'пр. Назарбаева, 29', '09:00 - 21:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (54, 'Павлодар', 'Глория-фарм', 'Ткачёва, 5/3', '09:00 - 21:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (55, 'Павлодар', 'Данагуль', 'Катаева, 12', '09:00 - 21:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (56, 'Павлодар', 'Здравушка', 'Сибирская, 89', '08:00 - 22:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (57, 'Павлодар', 'Изида ПВ', 'Торайгырова, 36', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (58, 'Павлодар', 'Лаура', 'Лермонтова, 90', '08:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (59, 'Павлодар', 'Официна', 'Лермонтова, 47', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (60, 'Павлодар', 'РАМИН', 'Ткачёва, 9', '09:00 - 22:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (61, 'Караганда', 'Биоритм', 'мкрн. 22, д. 23', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (62, 'Караганда', 'Даяна фарма', 'ул. Космонавтов, 1В, Бутик 19', '10:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (63, 'Караганда', 'Забота', 'ул. Приканальная, 6', '09:00 - 21:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (64, 'Караганда', 'Империя Здоровья', 'Ленина, 66', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (65, 'Караганда', 'Керемет', 'ул. Абдирова, 24/1', '08:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (66, 'Караганда', 'Лидия', 'Муканова, 26', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (67, 'Караганда', 'Марина', 'мкрн. Восток-2, К. Маркса, 9', '08:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (68, 'Караганда', 'Натали', 'Степной-2 д. 6\1', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (69, 'Караганда', 'Правильные лекарства', 'ул. Кривогуза, 9', '09:00 - 19:30')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (70, 'Караганда', 'Парацельс', 'пр. Бухар Жырау, 74', '09:00 - 23:59')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (71, 'Кызылорда', 'Центральная', 'ул. Байтурсынова, 46Б', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (72, 'Кызылорда', 'Шипа', 'ул. Абая, 46', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (73, 'Кызылорда', 'Адонис', 'мкр. Шугыла, 25/37', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (74, 'Кызылорда', 'Ан-Нафи', 'пр. Абая, 43/32', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (75, 'Кызылорда', 'Ақ-Қайың', 'ул. Жеңіс, 98/31', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (76, 'Кызылорда', 'Ақмешіт', 'мкр. Акмечеть, 28/125', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (77, 'Кызылорда', 'Бейбарыс', 'мкр. Саулет, ул. Абдоллаева, 2А', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (78, 'Кызылорда', 'Бибінұр', 'пос. Титова, ул. Малоэтажная,1/1А', '09:00 - 20:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (79, 'Кызылорда', 'Мирас', 'ул. Абуова, 21', '09:00 - 19:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (80, 'Кызылорда', 'Колос', 'ул. Бейбитшилик, 26', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (81, 'Семей', 'АЛЬФАМЕД', 'ул. Уранхаева, 59', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (82, 'Семей', 'НИЕТТЕС', 'пер. Кабельный, 3', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (83, 'Семей', 'Adal Pharm', 'просп. Шакарима, 75', '24/7')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (84, 'Семей', 'Forte+', 'ул. Академика Павлова, 101', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (85, 'Семей', 'АРГО', 'пр. Шакарима, 54', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (86, 'Семей', 'ИЛЬЯ', '410 квартал, д. 8', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (87, 'Семей', 'УРГА', 'ул. Засядко, 38', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (88, 'Семей', 'ХАКИМ', 'пр. Шакарима, 150', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (89, 'Семей', 'ЭМИТИ', 'ул. Титова, 143', '09:00 - 20:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (90, 'Семей', 'Акшын', 'ул. Засятко, 65', '09:00 - 18:30')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (91, 'Кокшетау', 'Адонис', 'ул. Пушкина, 17', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (92, 'Кокшетау', 'Аист', 'мкр. Юбилейный, 42', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (93, 'Кокшетау', 'АРША', 'ул. Ашимова, 2 А', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (94, 'Кокшетау', 'Изумруд', 'ул. Горького, 64', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (95, 'Кокшетау', 'Ландыш', 'ул. Скриптонита, 36', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (96, 'Кокшетау', 'Комек', 'пр. Абылай хана, 30', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (97, 'Кокшетау', 'Лантана', 'ул. Ауэзова, 226', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (98, 'Кокшетау', 'Медея', 'ул. Ауэзова, 173', '09:00 - 20:00')
+
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (99, 'Кокшетау', 'Мерей', 'ул. Центральная, 47', '09:00 - 20:00')
+
+INTO apteki(ID, City, Name, Address, Time_Schedule)
+VALUES (100, 'Кокшетау', 'Пульс', 'ул. A 343', '09:00 - 20:00')
+
+SELECT * FROM DUAL

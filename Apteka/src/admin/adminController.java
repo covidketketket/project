@@ -65,11 +65,16 @@ public class adminController implements Initializable {
         choosedCity = "'" + city.getValue() + "'";
         chdr = drugname.getText();
         choosedSort = (sort.getValue().equals("")? "" : "order by " + sort.getValue());
-        loadWindow("/ATableView/ATable.fxml", "Apteka: " + city.getValue());
+        loadWindow("/ATableView/ATable.fxml", "Apteka: search result" + city.getValue());
     }
-    public void adminpage(MouseEvent mouseEvent) throws IOException {
+    public void upd(MouseEvent mouseEvent) throws IOException {
         ((Node) mouseEvent.getSource()).getScene().getWindow().hide();
-        loadWindow("/edit/edit.fxml", "Apteka: admin page");
+        loadWindow("/add/add.fxml", "Apteka: admin add mode" + city.getValue());
+    }
+
+    public void dlt(MouseEvent mouseEvent) throws IOException {
+        ((Node) mouseEvent.getSource()).getScene().getWindow().hide();
+        loadWindow("/delete/delete.fxml", "Apteka: admin delete mode" + city.getValue());
     }
     public void loadWindow(String location, String title) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(location));
@@ -78,5 +83,12 @@ public class adminController implements Initializable {
         stage.setScene(scene);
         stage.setTitle(title);
         stage.show();
+    }
+
+    public void searchru(MouseEvent mouseEvent) throws IOException {
+        choosedCity = "'" + city.getValue() + "'";
+        chdr = drugname.getText();
+        choosedSort = (sort.getValue().equals("")? "" : "order by " + sort.getValue());
+        loadWindow("/RUTable/RTable.fxml", "Apteka: search rollup result" + city.getValue());
     }
 }

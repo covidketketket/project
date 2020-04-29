@@ -53,10 +53,10 @@ public class AViewController implements Initializable {
     private void loadData() {
         list.removeAll(list);
         String c = adminController.getCity();
-        String query = "select drug_name, name, city, address, time_schedule,"
+        String query = "select INITCAP(drug_name) as drug_name, INITCAP(name) as name, city, address, time_schedule,"
                 + "drug_price from apteki natural join drugs natural join price "
                 + "where city = " + ((c.equals("'*'")) ? "city" : c) + " and drug_name like '%"
-                + adminController.getDrugName() + "' " + adminController.getSort();
+                + adminController.getDrugName().toLowerCase() + "%' " + adminController.getSort();
         try {
             PreparedStatement noah = DataBaseHandler.conn.prepareStatement(query);
             ResultSet res = noah.executeQuery();

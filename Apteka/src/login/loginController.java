@@ -2,6 +2,7 @@ package login;
 
 import TableView.viewController;
 import UserDataBase.DataBaseHandler;
+import UserDataBase.UserDataBaseHandler;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -11,10 +12,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import user.userController;
@@ -28,6 +31,7 @@ import java.util.ResourceBundle;
 
 public class loginController implements Initializable {
     private static DataBaseHandler handler;
+    private static UserDataBaseHandler uhandler;
     ObservableList list = FXCollections.observableArrayList();
     String defaultAdminName="admin";
     String defaultAdminPass="admin";
@@ -37,9 +41,13 @@ public class loginController implements Initializable {
     public TextField signin;
     @FXML
     private PasswordField pass;
+    @FXML
+    private Text sysd;
 
     public void initialize(URL url, ResourceBundle rb) {
         handler= DataBaseHandler.getInstance();
+        uhandler = UserDataBaseHandler.getInstance();
+        setDate();
     }
     public void UserSignIn(ActionEvent event) throws IOException {
         String name = signin.getText();
@@ -51,7 +59,7 @@ public class loginController implements Initializable {
             alert.showAndWait();
         } else if ((name.equals(defaultAdminName) && pas.equals(defaultAdminPass))) {
             ((Node) event.getSource()).getScene().getWindow().hide();
-            loadWindow("/admin/admin.fxml", "Apteka: Search Helper");
+            loadWindow("/admin/admin.fxml", "Apteka: Search Helper admin mode");
         } else if (name.equals(defaultUserName) && pas.equals(defaultUserPass)){
             ((Node) event.getSource()).getScene().getWindow().hide();
             loadWindow("/user/user.fxml", "Apteka: Search Helper");
@@ -85,6 +93,16 @@ public class loginController implements Initializable {
             throwables.printStackTrace();
         }
         return false;
+    }
+    public void setDate() {
+        String query = "SELECT SYSDATE FROM DUAL";
+        try {
+            PreparedStatement noah1 = DataBaseHandler.conn.prepareStatement(query);
+            ResultSet res = noah1.executeQuery();
+            res.next();
+            String date = res.getString("sysdate");
+            sysd.setText(date);
+        }catch (Exception e) {}
     }
     public void register(MouseEvent mouseEvent) throws IOException {
         ((Node) mouseEvent.getSource()).getScene().getWindow().hide();
